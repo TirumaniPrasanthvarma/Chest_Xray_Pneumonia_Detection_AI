@@ -94,10 +94,11 @@ div.stButton > button:hover {
 
 def get_connection():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="nani",
-        database="xray_app"
+        host=os.getenv("MYSQLHOST"),
+        user=os.getenv("MYSQLUSER"),
+        password=os.getenv("MYSQLPASSWORD"),
+        database=os.getenv("MYSQLDATABASE"),
+        port=int(os.getenv("MYSQLPORT"))
     )
 
 def register_user(username, password):
