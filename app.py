@@ -270,4 +270,4 @@ elif st.session_state.page == "main":
 # ==========================================================
 
 st.markdown("---")
-st.caption("Developed by Prasanth Varma | AIML Internship Project")
+st.caption("ML Class Team Project")
